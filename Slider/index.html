@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 2: Slider con JS</title>
+    <link rel="stylesheet" href="style/estilos.css">
+    <script src="js/codigo.js"></script>
+</head>
+<body>
+    <div class="contenedorFotos">
+        <div class="imagenes">
+            <img name="imagen" src="img/0.jpg">
+        </div>
+
+        <div class="botones">
+            <a id="prev">&#10094;</a>
+            <a id="sig">&#10095;</a>
+        </div>
+
+        <div class ="botonera">
+
+            <input id="dot0" type="radio" name="dot" onclick="posicionar(0)">
+            <label for="dot0"><span ></span></label>
+
+            <input id="dot1" type="radio" name="dot" onclick="posicionar(1)">
+            <label for="dot1"><span></span></label>
+
+            <input id="dot2" type="radio" name="dot" onclick="posicionar(2)">
+            <label for="dot2"><span></span></label>
+
+            <input id="dot3" type="radio" name="dot" onclick="posicionar(3)">
+            <label for="dot3"><span></span></label>
+
+        </div>
+    </div>
+</body>
+</html>

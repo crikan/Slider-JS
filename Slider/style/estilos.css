@@ -1,0 +1,66 @@
+*{
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedorFotos{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    background-color: #5a5ab3;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #999;
+}
+.imagenes{
+    position: absolute;
+    width:100%;
+    height:100%;
+
+}
+.imagenes img{
+    height:100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.botones a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 0.1em 0.0em 0.2em #504f4f;
+}
+.botones a:hover{
+    cursor: pointer;
+    color: rgb(86, 136, 131);
+}
+#sig{
+    left: 96%;
+}
+#prev{
+    left: 2%;
+}
+.botonera{
+    position: absolute;
+    width: 100%;
+    top: 93%;
+    text-align: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"] + label span{
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(84, 79, 133);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+input[type="radio"]:checked + label span{
+    background-color: rgb(86, 136, 131);
+    box-shadow: 1px 1px 5px #999;
+}    
